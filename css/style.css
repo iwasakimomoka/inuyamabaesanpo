@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* あると便利なもの */
+
+/* @font-face {
+  font-family: "utsukushi";
+  src: url("../fonts/UtsukushiFONT.otf");
+  font-weight: "100";
+} */
+
+@font-face {
+  font-family: "utsu";
+  src: url("../fonts/UtsukushiFONT.otf");
+}
+
+:root {
+  --maingreen: #dcede7;
+}
+/* これやると color: var(--maingray);で通るし一遍に色変えれるから地味に便利 */
+
+body {
+  background-color: var(--maingreen);
+  font-family: "utsu";
+}
+.first-view-wrap {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 25%;
+  position: relative;
+}
+.header-picture-wrap img {
+  width: 100%;
+}
+
+.header-title-s {
+  margin: 0 auto;
+}
+
+.header-title-img-wrap {
+  width: 42vw;
+  position: absolute;
+  top: 4vw;
+  left: 9vw;
+}
+
+.header-title-img-wrap img {
+  width: 100%;
+}
+
+.header-title {
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 9vw;
+  left: 17%;
+  color: #dcede7;
+  font-size: 5vw;
+  line-height: 1.5;
+}
+
+.header-exp {
+  position: absolute;
+  top: 9vw;
+  right: 10%;
+  text-align: right;
+  font-size: 2vw;
+  color: #dcede7;
+}
+
+.header-exp-s {
+  width: 100%;
+  position: absolute;
+  top: 40vw;
+}
+.header-picture-exp-wrap img {
+  width: 100%;
+}
+
+.contents-wrap {
+  position: relative;
+  height: 40vw;
+  top: 100px;
+  bottom: 100px;
+  margin-bottom: 50%;
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.cw-caption1 {
+  background-image: url("../picture&photo/芳川屋説明背景.png");
+  background-size: contain;
+  padding: 9vw 11vw;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 9vw;
+  width: 47vw;
+  height: 26vw;
+  color: #dcede7;
+}
+
+.cw-caption2 {
+  background-image: url("../picture&photo/ホンマチコーヒー説明背景.png");
+  background-size: contain;
+  padding: 8vw 6vw;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 17vw;
+  width: 47vw;
+  height: 27vw;
+  color: #dcede7;
+}
+.cw-caption3 {
+  background-image: url("../picture&photo/YR-CAFE説明背景.png");
+  background-size: contain;
+  padding: 6vw 9vw;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 9vw;
+  top: 4vw;
+  width: 47vw;
+  height: 26vw;
+  color: #dcede7;
+}
+.cw-caption4 {
+  background-image: url("../picture&photo/本町茶寮説明背景.png");
+  background-size: contain;
+  padding: 8vw 19vw 12vw 7vw;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 16vw;
+  width: 51vw;
+  height: 32vw;
+  color: #dcede7;
+}
+.cw-caption5 {
+  background-image: url("../picture&photo//三光稲荷神社説明背景.png");
+  background-size: contain;
+  padding: 7vw 10vw;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 8vw;
+  width: 47vw;
+  height: 26vw;
+  color: #dcede7;
+}
+.cw-caption6 {
+  background-image: url(../picture&photo/犬山城説明背景.png);
+  background-size: contain;
+  padding: 10vw 12vw;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5vw;
+  left: 9vw;
+  width: 60vw;
+  height: 32vw;
+  color: #dcede7;
+}
+
+h3 {
+  color: #dcede7;
+  margin-bottom: 16px;
+  font-size: 2.5vw;
+}
+
+.contents-wrap p {
+  font-size: 1.8vw;
+  color: #dcede7;
+  width: 25vw;
+}
+
+.cw-img {
+  width: 53vw;
+  position: absolute;
+  z-index: 60;
+}
+
+.cw-img1 {
+  left: 10vw;
+}
+
+.cw-img2 {
+  right: 11vw;
+  top: 2vw;
+}
+
+.cw-img3 {
+  left: 10vw;
+}
+
+.cw-img4 {
+  right: 3vw;
+  top: 6vw;
+}
+
+.cw-img5 {
+  left: 10vw;
+}
+.cw-img6 {
+  right: 7vw;
+}
+
+.cw-img img {
+  width: 100%;
+}
+.cw-back {
+  width: 50vw;
+}
+.cw-back img {
+  position: absolute;
+  width: 50vw;
+  right: 17vw;
+}
+
+.map {
+  position: relative;
+  margin-top: 200px;
+  text-align: center;
+  margin-bottom: 500px;
+}
+
+.map-pic {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.map-pic img {
+  z-index: 30;
+  width: 58%;
+}
+.map-title {
+  position: absolute;
+  top: 2vw;
+  left: 43%;
+  z-index: 28;
+  font-size: 3.5vh;
+  color: #dcede7;
+}
+
+footer {
+  width: 100%;
+}
+.footer-back img {
+  margin-top: 200px;
+  position: absolute;
+  width: 100%;
+}
+.footer-caption {
+  width: 100%;
+  position: absolute;
+  z-index: 28;
+}
+.footer-caption h4 {
+  position: absolute;
+  z-index: 30;
+  top: 40vw;
+  left: 10vw;
+  bottom: 10vw;
+  font-size: 4vw;
+  color: #dcede7;
+}
+
+.footer-caption p {
+  position: absolute;
+  z-index: 30;
+  right: 10vw;
+  top: 40vw;
+}
+
+.footer-caption {
+  display: flex;
+  flex-direction: row;
+}
+
+.place-btn {
+  position: fixed;
+  width: 8vh;
+  bottom: 50vh;
+  left: 0px;
+}
+.place-btn img {
+  width: 100%;
+}
+
+.btn-caption {
+  color: #dcede7;
+  writing-mode: vertical-rl;
+  position: fixed;
+  left: 3vh;
+  bottom: 52vh;
+  font-size: 2.5vh;
+}
