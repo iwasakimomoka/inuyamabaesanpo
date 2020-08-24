@@ -26,6 +26,13 @@ body {
   background-color: var(--maingreen);
   font-family: "utsu";
 }
+
+a.anchor {
+  display: block;
+  padding-top: 600px;
+  margin-top: -600px;
+}
+
 .first-view-wrap {
   width: 100%;
   height: 100%;
@@ -105,7 +112,7 @@ body {
 .cw-caption2 {
   background-image: url("../picture&photo/ホンマチコーヒー説明背景.png");
   background-size: contain;
-  padding: 8vw 6vw;
+  padding: 6vw 6vw;
   background-repeat: no-repeat;
   position: absolute;
   left: 17vw;
@@ -173,34 +180,35 @@ h3 {
 }
 
 .cw-img {
-  width: 53vw;
+  width: 38vw;
   position: absolute;
   z-index: 60;
 }
 
 .cw-img1 {
-  left: 10vw;
+  left: 14vw;
 }
 
 .cw-img2 {
-  right: 11vw;
+  width: 37vw;
+  right: 14vw;
   top: 2vw;
 }
 
 .cw-img3 {
-  left: 10vw;
+  left: 14vw;
 }
 
 .cw-img4 {
-  right: 3vw;
+  right: 13vw;
   top: 6vw;
 }
 
 .cw-img5 {
-  left: 10vw;
+  left: 14vw;
 }
 .cw-img6 {
-  right: 7vw;
+  right: 14vw;
 }
 
 .cw-img img {
@@ -217,34 +225,32 @@ h3 {
 
 .map {
   position: relative;
-  margin-top: 200px;
+  width: 100%;
+  margin-top: 31vw;
   text-align: center;
-  margin-bottom: 500px;
+  margin-bottom: -11vw;
+  margin-right: 0%;
 }
 
-.map-pic {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-}
-.map-pic img {
-  z-index: 30;
-  width: 58%;
-}
 .map-title {
-  position: absolute;
-  top: 2vw;
-  left: 43%;
-  z-index: 28;
-  font-size: 3.5vh;
-  color: #dcede7;
-}
+  background-image: url(../picture&photo/地図.png);
+    background-size: contain;
+    padding: 4vw 44vw;
+    background-repeat: no-repeat;
+    font-size: 4vw;
+    width: 100%;
+    height: 63vw;
+    color: #dcede7;
+    background-position: center;
+  }
+
 
 footer {
   width: 100%;
+  position: relative;
 }
 .footer-back img {
-  margin-top: 200px;
+  margin-top: 20vw;
   position: absolute;
   width: 100%;
 }
@@ -256,8 +262,8 @@ footer {
 .footer-caption h4 {
   position: absolute;
   z-index: 30;
-  top: 40vw;
-  left: 10vw;
+  top: 37vw;
+  left: 6vw;
   bottom: 10vw;
   font-size: 4vw;
   color: #dcede7;
@@ -268,28 +274,227 @@ footer {
   z-index: 30;
   right: 10vw;
   top: 40vw;
+  font-size: 2vw;
+  color: #dcede7;
 }
 
-.footer-caption {
-  display: flex;
-  flex-direction: row;
-}
-
-.place-btn {
-  position: fixed;
-  width: 8vh;
-  bottom: 50vh;
-  left: 0px;
-}
-.place-btn img {
+.to-1 {
+  position: absolute;
   width: 100%;
+  z-index: 30;
+  right: 40vw;
+  font-size: 2vw;
+}
+.to-2 {
+  position: absolute;
+  width: 100%;
+  z-index: 30;
+  right: 18vw;
+  font-size: 2vw;
+}
+.to-3 {
+  position: absolute;
+  width: 100%;
+  z-index: 30;
+  right: 7vw;
+  font-size: 2vw;
+}
+.to-4 {
+  position: absolute;
+  width: 100%;
+  z-index: 30;
+  right: 35vw;
+  top: 4vw;
+  font-size: 2vw;
+}
+.to-5 {
+  position: absolute;
+  width: 100%;
+  z-index: 30;
+  right: 19vw;
+  top: 4vw;
+  font-size: 2vw;
+}
+.to-6 {
+  position: absolute;
+  width: 100%;
+  z-index: 30;
+  right: 10vw;
+  top: 4vw;
+  font-size: 2vw;
+}
+.btn-open {
+  position: fixed;
+  width: 69vw;
+  height: auto;
+  bottom: 50vh;
+  width: 100%;
+}
+.btn-open img {
+  position: fixed;
+    width: 10vh;
+    bottom: 50vh;
+    right: 0px;
+  z-index: 89;
 }
 
 .btn-caption {
   color: #dcede7;
   writing-mode: vertical-rl;
   position: fixed;
-  left: 3vh;
+  right: 3vh;
   bottom: 52vh;
   font-size: 2.5vh;
+  z-index: 88;
 }
+
+
+.popup {
+  background-color: rgba(255, 187, 131, 0.9);
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+   
+    z-index: 90;
+}
+
+#popup-on{
+  display: none;
+}
+
+#popup-on:checked + .popup{
+  display: flex;
+}
+
+
+
+
+.popup-content{
+  width: 100vw;
+}
+.popup-back img{
+  position: absolute;
+  width: 100vw;
+  height: 60vh;
+  margin: 5vh 0 0 0;
+  z-index: 90;
+}
+
+.popup-content img{
+  width: 100vw;
+}
+.menu-imgs{
+  left: 20vw;
+}
+
+
+
+ .effect-fade {
+  opacity : 0;
+  transform : translate(0, 30vw);
+  transition : all 400ms;
+  }
+  
+  .effect-fade.effect-scroll {
+  opacity : 1;
+  transform : translate(0, 0);
+  }
+
+  .effect-fade1 {
+    opacity : 0;
+    transform : translate(0, 30vw);
+    transition : all 600ms;
+    }
+
+  .effect-fade2 {
+    opacity : 0;
+    transform : translate(0, 30vw);
+    transition : all 700ms;
+    }
+    
+/* これより大きい時 */
+    @media screen and (min-width: 600px) {
+      .menu-imgs {
+        text-align:  center;  
+        margin-top: 50px; 
+    }
+      .menu-imgs img{
+        max-width: 300px;
+        
+        z-index: 99;
+      }
+      
+      .menu-yoshi img{
+       margin: 6px;
+       width: 32vw;
+      }
+      .menu-coffee img{
+    margin: 6px;
+    width: 20vw;
+    /* max-width: 19vw; */
+    min-width: 220px;
+       }
+       .menu-YR img{
+        margin: 6px;
+        width: 32vw;
+       }
+       .menu-saryo img{
+        margin: 6px;
+        width: 32vw;
+       }
+       .menu-jinja img{
+        margin: 6px;
+        width: 32vw;
+       }
+       .menu-inuyamajo img{
+        margin: 6px;
+        width: 32vw;
+       }
+    }
+/* これより小さい時 */
+    @media screen and (max-width: 600px) {
+
+      .menu-imgs {
+        text-align:  center;  
+        margin-top: 10vh; 
+    }
+
+      .menu-imgs img{
+        max-width: 300px;
+        width: 40vw;
+        z-index: 99;
+      }
+      
+      .menu-yoshi img{
+       margin: 6px;
+       width: 32vw;
+      }
+      .menu-coffee img{
+        margin: 6px;
+        width: 28vw;
+       }
+       .menu-YR img{
+        margin: 6px;
+        width: 32vw;
+       }
+       .menu-saryo img{
+        margin: 6px;
+        width: 32vw;
+       }
+       .menu-jinja img{
+        margin: 6px;
+        width: 32vw;
+       }
+       .menu-inuyamajo img{
+        margin: 6px;
+        width: 32vw;
+       }
+    }
+
+
+
+    
