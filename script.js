@@ -1,3 +1,11 @@
+
+if (performance.navigation.type == 1 && location.hash) {
+    location.href = location.href.replace(/# */, "#yoshi #machico #YR #machisa #inari #yamajo");
+}
+
+
+
+
 window.onload = function () {
     scroll_effect();
 
@@ -57,5 +65,4 @@ $(function () {
         });
     });
 });
-
 
